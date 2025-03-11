@@ -38,6 +38,6 @@ public class Alquiler {
 }
 
 // Creo el Enum para el estado del alquiler
-enum EstadoAlquiler {
+public enum EstadoAlquiler {
     ACTIVE, COMPLETED
 }
