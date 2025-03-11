@@ -7,6 +7,7 @@ import com.example.ExamenAdatJCarlos.Model.Usuario;
 import com.example.ExamenAdatJCarlos.Repository.AlquilerRepository;
 import com.example.ExamenAdatJCarlos.Repository.CocheRepository;
 import com.example.ExamenAdatJCarlos.Repository.UsuarioRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -18,6 +19,7 @@ public class AlquilerService {
     private final CocheRepository cocheRepository;
     private final UsuarioRepository usuarioRepository;
 
+    @Autowired
     public AlquilerService(AlquilerRepository ar, CocheRepository cr, UsuarioRepository ur) {
         this.alquilerRepository = ar;
         this.cocheRepository = cr;

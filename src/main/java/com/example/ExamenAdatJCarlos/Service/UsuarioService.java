@@ -2,6 +2,7 @@ package com.example.ExamenAdatJCarlos.Service;
 
 import com.example.ExamenAdatJCarlos.Model.Usuario;
 import com.example.ExamenAdatJCarlos.Repository.UsuarioRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
 public class UsuarioService {
     private final UsuarioRepository repository;
 
+    @Autowired
     public UsuarioService(UsuarioRepository repository) {
         this.repository = repository;
     }

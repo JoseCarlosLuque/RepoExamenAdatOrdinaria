@@ -2,6 +2,7 @@ package com.example.ExamenAdatJCarlos.Service;
 
 import com.example.ExamenAdatJCarlos.Model.Coche;
 import com.example.ExamenAdatJCarlos.Repository.CocheRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
 public class CocheService {
     private final CocheRepository repository;
 
+    @Autowired
     public CocheService(CocheRepository repository) {
         this.repository = repository;
     }
