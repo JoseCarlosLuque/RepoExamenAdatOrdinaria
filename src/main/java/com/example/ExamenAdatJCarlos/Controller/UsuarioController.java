@@ -2,6 +2,7 @@ package com.example.ExamenAdatJCarlos.Controller;
 
 import com.example.ExamenAdatJCarlos.Model.Usuario;
 import com.example.ExamenAdatJCarlos.Service.UsuarioService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.List;
 
         private final UsuarioService service;
 
+        @Autowired
         public UsuarioController(UsuarioService service) {
             this.service = service;
         }

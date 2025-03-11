@@ -3,6 +3,7 @@ package com.example.ExamenAdatJCarlos.Controller;
 
 import com.example.ExamenAdatJCarlos.Model.Coche;
 import com.example.ExamenAdatJCarlos.Service.CocheService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.List;
 public class CocheController {
     private final CocheService service;
 
+    @Autowired
     public CocheController(CocheService service) {
         this.service = service;
     }

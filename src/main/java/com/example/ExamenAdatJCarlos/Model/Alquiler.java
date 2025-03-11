@@ -37,7 +37,3 @@ public class Alquiler {
     private String jclc_seguro;
 }
 
-// Creo el Enum para el estado del alquiler
-public enum EstadoAlquiler {
-    ACTIVE, COMPLETED
-}
